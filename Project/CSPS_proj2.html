@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Order bill</title>
+    <script type="text/javascript" src="CSPS_project.js"></script>
+    <style type="text/css">
+        body {
+            background-color: pink;
+            color:purple;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            
+        }
+
+        h1 {
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dessert Menu</h1>
+
+    <form>
+
+        <p> Ice cream   <img src="icecream.jpg" width="200" height="200">   4$  <input tyoe ="text" id ="l1" size = "15" style="background-color: pink; color: purple;"></p>
+        <p> Bubble tea  <img src="bobatea.jpg" width="200" height="200">    6$  <input tyoe ="text" id ="l2" size = "15" style="background-color: pink; color: purple;"></p>
+        <p> Smoothie     <img src="smothie.jpg" width="200" height="200">    7$  <input tyoe ="text" id ="l3" size = "15" style="background-color: pink; color: purple;"></p>
+        <p> Waffle      <img src="waffle.jpg" width="200" height="200">     5$  <input tyoe ="text" id ="l4" size = "15" style="background-color: pink; color: purple;"></p>
+        <p> Pudding     <img src="pudding.jpg" width="200" height="200">    3$  <input tyoe ="text" id ="l5" size = "15" style="background-color: pink; color: purple;"></p>
+        <br/>
+        <input type="button" value="Total Price Calculate" onclick = "grade.innerHTML ='Your Toal Price is ' + calculateT(l1.value, l2.value, l3.value, l4.value, l5.value)+'$'" style="background-color: pink; color: purple;">
+    </form>
+
+ 
+    <br/>
+    <p id="grade"> Fill your order </p>
+    <br/>
+
+    <script>
+        var l1 = 0, l2 = 0, l3 = 0, l4 = 0, l5 = 0;
+        var Totalp = 0;
+
+
+        function calculateT(l1,l2,l3,l4,l5){
+        Totalp = (parseInt(l1)*4+parseInt(l2)*6+parseInt(l3)*7+parseInt(l4)*5+parseInt(l5)*3);
+        return Totalp
+    }
+
+    </script>
+
+</body>
+</html>

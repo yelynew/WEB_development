@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Review</title>
+    <script type="text/javascript" src="CSPS_project.js"></script>
+    <style type="text/css">
+        body {
+            background-color: pink;
+            color:purple;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            
+        }
+
+        h1 {
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Please rate the service:</h1>
+        <p>
+            <input type="radio" name="rate" id="verrypoor" > Very poor
+            <input type="radio" name="rate" id="poor" > Poor
+            <input type="radio" name="rate" id="ok" > OK
+            <input type="radio" name="rate" id="good" > Good
+            <input type="radio" name="rate" id="verygood" > Very Good
+        </p>
+        
+        <input type = "button" value ="submit" onclick = "demo.innerHTML = updateDemo()">
+    </form>
+    
+    <p id = "demo"> </p>
+
+    <script>
+        function updateDemo() 
+        {
+            var feedback = "";
+            if (document.getElementById("verrypoor").checked)
+            {   feedback = "Really sorry to hear it, we will contact you for more feedbacks"; }
+            else if (document.getElementById("poor").checked)
+            {	feedback = "We are sorry to hear it, we will try to improve."; }
+            else if (document.getElementById("ok").checked)
+            {	feedback = "Thanks for the feedback."; }
+            else if (document.getElementById("good").checked)
+            {	feedback = "Thanks for the feedback."; }
+            else 
+            {	feedback = "Glad to hear it, thanks for the feedback."; } 
+            
+            return feedback;
+        }
+        
+    </script>
+</body>
+</html>

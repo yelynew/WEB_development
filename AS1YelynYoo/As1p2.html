@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="As1p2.css" />
+</head>
+<body>
+    <div id="head" style="margin:auto;text-align:center;">
+        <h2>
+            NDSU Conference Registration Form
+        </h2>
+        <h3>Required Item(*)</h3>
+        <hr />
+
+
+        <form action="ndsu.php" style="display:inline-block;">
+            <table id="tb">
+                <tr>
+                    <th>Title</th>
+                    <td><input id="Text1" type="text" /></td>
+                </tr>
+                <tr>
+                    <th>First Name*</th>
+                    <td><input id="Text1" type="text" required /></td>
+                </tr>
+                <tr>
+                    <th>Last Name*</th>
+                    <td><input id="Text1" type="text" required /></td>
+                </tr>
+                <tr>
+                    <th valign="top">Address*</th>
+                    <td><input id="Address" type="text" required /></td>
+                </tr>
+                <tr>
+                    <th>Company or <br /> University</th>
+                    <td><input id="Text1" type="text" /></td>
+                </tr>
+                <tr>
+                    <th>E-mail*</th>
+                    <td><input id="Text1" type="email" required /></td>
+                </tr>
+                <tr>
+                    <th>Phone<br />Number*</th>
+                    <td><input id="Text1" type="text" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(nnn) nnn-nnnn" required /></td>
+                </tr>
+                <tr>
+                    <th>Membership<br />Number</th>
+                    <td><input id="Text1" type="text" pattern="acgip-[0-9]{6}" placeholder="acgip-nnnnnn" /></td>
+                </tr>
+                <tr>
+                    <th>Registration<br />Info</th>
+                    <td>
+                        <select id="RI">
+                            <option value="ND1">NDSU Member (1000$)</option>
+                            <option value="ND2">NDSU Member (700$)</option>
+                            <option value="ND2">NDSU Member (500$)</option>
+                            <option value="NDM" selected>NDSU Member (300$)</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div style="text-align: right;"><input id="submitbutton" type="submit" value="SUBMIT" /></div>
+        </form>
+    </div>
+
+</body>
+</html>

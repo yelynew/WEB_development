@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="As1p1.css" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.ndsu.edu/">Home</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Financial</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Accounts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>E x p e n s e  &nbsp; R e p o r t</h1>
+    <br />
+    <form action="test.php">
+        <table id="t0" border="1" bordercolor="#5593D4">
+            <tr>
+                <th>Trip Summary*</th>
+            </tr>
+            <tr>
+                <td><textarea id="w3review" name="w3review" rows="4" cols="50" required></textarea></td>
+            </tr>
+        </table>
+       
+        <table id="t1" border="1" bordercolor="#5593D4">
+            <tr>
+                <th>Last Name*</th>
+                <th>First Name*</th>
+                <th height="10px" width="30px">M.I.</th>
+                <th>Account*</th>
+                <td><input id="Acc" type="number" placeholder="enter number" required /></td>
+            </tr>
+
+            <tr>
+                <td><input id="LN" type="text" required /></td>
+                <td><input id="FN" type="text" required /></td>
+                <td height="15px" width="30px"><input id="MI" type="text" /></td>
+                <th>Departmnet*</th>
+                <td><input id="Dep" type="text" required /></td>
+            </tr>
+            <tr>
+                <th>Social Security Number*</th>
+                <td colspan="2"><input id="SSN" type="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" placeholder="nnn-nn-nnnn" required /></td>
+                <th>Project*</th>
+                <td><input id="PRJ" type="text" pattern="PROJ-[a-z]{2}-[0-9]{3}" placeholder="PROJ-xx-ddd" required /></td>
+
+            </tr>
+        </table>
+        <table id="t2" border="1" bordercolor="#5593D4">
+            <tr>
+                <th>Travel Date</th>
+                <th>Air & Trans</th>
+                <th>Lodging</th>
+                <th>Meals & Tips</th>
+                <th>Other</th>
+                <th>TOTAL</th>
+            </tr>
+            <tr>
+                <td><input id="Text1" type="date" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+            <tr>
+                <td><input id="Text1" type="date" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+            <tr>
+                <td><input id="Text1" type="date" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+            <tr>
+                <td><input id="Text1" type="date" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+            <tr>
+                <td><input id="Text1" type="date" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+            <tr>
+                <td><input id="Text1" type="date" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+        </table>
+
+        <table id="t3" border="1" bordercolor="#5593D4">
+            <tr>
+                <th height="10px" width="133px">SUMMARY</th>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+                <td><input id="Text1" type="text" /></td>
+            </tr>
+        </table>
+        <br />
+        <div style="text-align: center;"><input id="submitbutton" type="submit" value="Submit Report" /></div>
+    </form>
+    <br />
+
+        <footer><small>Enterprises ⓒ 2021 All Rights Reserved</small></footer>
+</body>
+</html>
